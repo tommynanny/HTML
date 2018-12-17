@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Final Report</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///C:\Users\tommynanny\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.3.11\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      pre{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;padding:1em;margin:.5em 0;overflow:auto;line-height:1.5;tab-size:4;hyphens:none;color:#c5c8c6;background-color:#27292c !important;border:#43484c;border-radius:3px}pre[class*="language-"]{padding:1em}code[class*="language-"] .token.comment,pre[class*="language-"] .token.comment,code[class*="language-"] .token.prolog,pre[class*="language-"] .token.prolog,code[class*="language-"] .token.doctype,pre[class*="language-"] .token.doctype,code[class*="language-"] .token.cdata,pre[class*="language-"] .token.cdata{color:#7C7C7C}code[class*="language-"] .token.punctuation,pre[class*="language-"] .token.punctuation{color:#96CBFE}code[class*="language-"] .namespace,pre[class*="language-"] .namespace{opacity:.7}code[class*="language-"] .token.constant,pre[class*="language-"] .token.constant{color:#99CC99}code[class*="language-"] .token.boolean,pre[class*="language-"] .token.boolean,code[class*="language-"] .token.number,pre[class*="language-"] .token.number,code[class*="language-"] .token.function-name,pre[class*="language-"] .token.function-name{color:#FF73FD}code[class*="language-"] .token.tag,pre[class*="language-"] .token.tag{color:#96CBFE}code[class*="language-"] .token.selector,pre[class*="language-"] .token.selector{color:#96CBFE}code[class*="language-"] .token.attr-name,pre[class*="language-"] .token.attr-name{color:#C6C5FE}code[class*="language-"] .token.string,pre[class*="language-"] .token.string{color:#A8FF60}code[class*="language-"] .token.char,pre[class*="language-"] .token.char{color:#FF8000}code[class*="language-"] .token.entity,pre[class*="language-"] .token.entity{color:#FFD2A7}code[class*="language-"] .token.url,pre[class*="language-"] .token.url{color:#7C7C7C}code[class*="language-"] .token.operator,pre[class*="language-"] .token.operator{color:#EDEDED}code[class*="language-"] .token.atrule,pre[class*="language-"] .token.atrule,code[class*="language-"] .token.attr-value,pre[class*="language-"] .token.attr-value,code[class*="language-"] .token.keyword,pre[class*="language-"] .token.keyword{color:#CFCB90}code[class*="language-"] .token.function,pre[class*="language-"] .token.function{color:#FFD2A7}code[class*="language-"] .token.class-name,pre[class*="language-"] .token.class-name{color:#FFD2A7}code[class*="language-"] .token.variable,pre[class*="language-"] .token.variable{color:#C6C5FE}code[class*="language-"] .token.regex,pre[class*="language-"] .token.regex,code[class*="language-"] .token.important,pre[class*="language-"] .token.important{color:#E9C062}code[class*="language-"] .token.important,pre[class*="language-"] .token.important,code[class*="language-"] .token.bold,pre[class*="language-"] .token.bold{font-weight:bold}code[class*="language-"] .token.italic,pre[class*="language-"] .token.italic{font-style:italic}code[class*="language-"] .token.entity,pre[class*="language-"] .token.entity{cursor:help}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#c5c8c6;background-color:#1d1f21;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#fff}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#9ba09d}html body strong{color:#fff}html body del{color:#9ba09d}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#ddd;text-decoration:none}html body a:hover{color:#cecece;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#9ba09d;border-left:4px solid #43484c}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#43484c;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#fff}html body table td,html body table th{border:1px solid #43484c;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#fff;background-color:#303337;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#43484c;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#fff;border:1px solid #43484c;border-bottom:2px solid #35393c;padding:2px 4px;background-color:#303337;border-radius:3px}@media print{html body{background-color:#1d1f21}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#fff;page-break-after:avoid}html body blockquote{color:#9ba09d}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}html body a{text-decoration:underline}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+.markdown-preview.markdown-preview h1,
+.markdown-preview.markdown-preview h2,
+.markdown-preview.markdown-preview h3,
+.markdown-preview.markdown-preview h4,
+.markdown-preview.markdown-preview h5,
+.markdown-preview.markdown-preview h6 {
+  color: cyan;
+}
+ 
+      </style>
+    </head>
+    <body for="html-export" >
+      <div class="mume markdown-preview   "  >
+      <html><head></head><body><h1 class="mume-header" id="final-report">Final Report</h1>
+
+<table>
+<thead>
+<tr>
+<th>Course</th>
+<th style="text-align:center">ART 3504 TS: Augmented and Virtual Reality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instructor</td>
+<td style="text-align:center">Dr. Wallace S. Lages</td>
+</tr>
+<tr>
+<td>Project name</td>
+<td style="text-align:center"><strong><em>Ninja Quest</em></strong>  <s><em>(Redirected Walking Algorithm)</em></s></td>
+</tr>
+<tr>
+<td>Reporters/Members</td>
+<td style="text-align:center">Nanlin Sun</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 class="mume-header" id="overview">Overview</h3>
+
+<p>This VR game generates random paths connected by teleportation doors and elevators in the air. The player will need to find their way through those paths and collect certain mount of coins existing on the way in order to unlock the final destination.</p>
+<p>Notice:<br>
+This project is originally about the generation algorithm that can redirect the players walking inside the limited room. The algorithm will using built-in game elements to generate dynamic game level that the player will never be out of reach in real world.</p>
+<p>The original project is now part of the research: <strong><em>Redirected Walking Algorithm</em></strong>. And the current project is now about the development of the VR game: <strong><em>Ninja Quest</em></strong> which is a game built with the <strong><em>Redirected Walking Algorithm</em></strong>. The <strong><em>Redirected Walking Algorithm</em></strong> is designed to improve the players&apos; locomotion VR game experience but it is not necessary for the current project.</p>
+<hr>
+<h4 class="mume-header" id="similar-project">Similar Project</h4>
+
+<ul>
+<li>
+<p><strong><em>Ninja Quest</em></strong><br>
+The Super Mario Class project is similar to current project but it does not has dynamic redirected walking algorithm to generate dynamic level.</p>
+</li>
+<li>
+<p><strong><em>Redirected Walking Algorithm</em></strong><br>
+A Japanese firm has designed a unlimited corridor which redirect player walking along a curved wall. The project is designed to redirect players through physical objects which is different from current project.</p>
+</li>
+</ul>
+<hr>
+<h3 class="mume-header" id="design">Design</h3>
+
+<p>The idea came from the class project that each classmate has to design a game element. This class project had not yet completed and I found it quite interesting to continue. The most interesting part of this design is that the game is of different game objects such as elevators, teleportation doors and more that the player can interact with to complete the game. And each game object has different functions, the teleportation door, that can transport player from one spot to another in one frame, the elevator that is pretty much like the real word elevator that can lift player up vertically. The possibility of the game is endless as more game objects can be added into the game.</p>
+<ul>
+<li>
+<h5>Elevator</h5>
+</li>
+</ul>
+<p>Elevator is pretty much like the real word elevator. It is designed to lift player up vertically. The reason behind this design is because we have multiple paths vertically aligned to each other and in order to let player to get from the lower path to the higher path, the player need to take the elevator to get to the higher path.</p>
+<p>The player needs to step into the elevator station, and a progress bar will appear on the floor and the value of the progress bar will increase. If player leaves the elevator station, the progress will cleared and the progress bar will disappear. If the progress bar value has reached its maximum value, a platform will be generated on the players&apos; foot&apos;s location and will start moving upward and lift the player up vertically, and will eventually stop at its destination. If the player leave the elevator, the elevator will be disappear.</p>
+<p>The older version of the elevator does not require player to stand on the station and wait the progress bar to charge. It generate the elevator instantly when the player step on it and a cool down will be applied till next time of using it. The problem of this design is that the if the player happen to fall from the higher paths to it, it will instantly elevate player up which is not the original purpose of the player&apos;s action. The player wants to fall down to the lower path rather than taking the elevator up. The idea of comedown after triggered was then changed into the charging to trigger as it is now.</p>
+<p>The elevator station is consist of a charing station, which has a trigger on it. It handles the charging task through OnTriggerEnter(), OnTriggerStay(), OnTriggerExit(). A new elevator gameobject will be instantiated after the the progress bar on the elevator station has been charged. The elevator is a object with only a trigger, and it makes the VR camera as its child when the trigger collides with the VR camera, and it removes the VR camera as the VR camera exits the trigger. The elevator also destroys itself when the VR camera leaves the trigger.</p>
+<ul>
+<li>
+<h5>Falling Spot</h5>
+</li>
+</ul>
+<p>Falling Spot is the place on one path that the player can fall off the current path to another path. Every Falling spot occurs on the higher paths between two vertically aligned paths. You can also consider it as the reverse travel method of the elevator.</p>
+<p>The player needs to step one step out of the falling spot in order to fall off the current path to another path.</p>
+<p>Notice: The player can always step out the current path and fall down on the ground, but it is not consider to be a valid falling. A valid falling is considered to falling from the falling spot to another path only.</p>
+<p>The falling spot exists when two path vertically aligned have different path pattern, and it exists at the location where it connects the sub path that has same path pattern and the sub path that has different path pattern.</p>
+<p><img src="https://i.imgur.com/ZLL7pBS.png" alt="image3"></p>
+<ul>
+<li>
+<h5>Teleportation Doors</h5>
+</li>
+</ul>
+<p>The teleportation doors are always pairs. They can transfer players from one end to the other in one frame. The teleportation doors are two-way transportation tools. They are  designed to let players to travel through different paths that are not vertically aligned. They are also the major travel option in game.</p>
+<p>The player needs to step into the teleportation circle, and a progress bar will appear on the floor and the value of the progress bar will increase. If player leaves the teleportation circle, the progress will cleared and the progress bar will disappear. If the progress bar value has reached its maximum value, the player will be transferred to another teleportation door location which is connected to current one. If the player leave the elevator, the elevator will be disappear.</p>
+<p><img src="https://i.imgur.com/CR1AM2E.gif" alt="image11"></p>
+<p>There are two old versions of the teleportation doors. The first one has the shape of door, and the second one has the shape of flag. The door shape design was deprecated because the large number of doors existing in the world block too much vision of the player. The flag shape design was deprecated because it is hard for player to understand its meaning. (it has poor representation of the teleportation door).</p>
+<p>The teleportation door is consist of a charing station, which has a trigger on it. It handles the charging task through OnTriggerEnter(), OnTriggerStay(), OnTriggerExit(). The VR camera will be relocated after the the progress bar on the teleportation door has been charged. The Parent of the VR camera has a function called move2(float), that will move the VR camera to any location.</p>
+<pre data-role="codeBlock" data-info="CS{class=&quot;line-numbers&quot;}" class="language-csharp line-numbers">    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">Move2</span><span class="token punctuation">(</span><span class="token class-name">Vector3</span> destination<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token class-name">Vector3</span> displacement <span class="token operator">=</span> destination <span class="token operator">-</span> VRcam<span class="token punctuation">.</span>position<span class="token punctuation">;</span>
+        <span class="token function">Move</span><span class="token punctuation">(</span>displacement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">Move</span><span class="token punctuation">(</span><span class="token class-name">Vector3</span> displacement<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        transform<span class="token punctuation">.</span>position <span class="token operator">+</span><span class="token operator">=</span> displacement<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre><ul>
+<li>
+<h5>Teleportation Indicator</h5>
+</li>
+</ul>
+<p>The teleportation indicator is the indicator that helps players to identify the other teleportation door that is connected to the current one. There are many pairs of teleportation doors in the game world, without this design the player has no idea where he is going to. The design of indicator is critical to the game object teleportation doors.</p>
+<p>When player approach one teleportation door, it will trigger. A big arrow indicator will show up in the world pointing to the other teleportation door. And when the player goes away, the indicator will disappear.</p>
+<p><img src="https://i.imgur.com/c0NmieH.gif" alt="image12"></p>
+<p>The older version of the teleportation indicator is the flag instead of the arrow. The flag will appear when the player approach it, and disappear when goes away. It serves the same purpose of helping players identify the location of the other end of the teleportation doors but it blocks the vision of the player and thus had been deprecated.</p>
+<ul>
+<li>
+<h5>Footstep Indicator</h5>
+</li>
+</ul>
+<p>Footstep is the indicator that will help player to identify its current foot location and facing direction. Since the game has no real body representation in the game, the player can see nothing on the floor, and sometime it is easy for them to fall off the path by accident.</p>
+<p>The player can always see the footstep indicator below him, it moves with player and rotate with player.</p>
+<p>It shoots a ray from the VR camera position vertically down and hit the first object. The footstep indicator has its dynamic location from the position of the hit point. The ray is cast in only &quot;Floor&quot; layer that only contains object that can be walked by player. The layer is obtained through LayerMask by bitwise operation.</p>
+<pre data-role="codeBlock" data-info="CS{class=&quot;line-numbers&quot;}" class="language-csharp line-numbers"><span class="token keyword">void</span> <span class="token function">Update</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">RaycastHit</span> hit<span class="token punctuation">;</span>
+    <span class="token class-name">LayerMask</span> layer <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">&lt;</span><span class="token operator">&lt;</span><span class="token number">8</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>Physics<span class="token punctuation">.</span><span class="token function">Raycast</span><span class="token punctuation">(</span>transform<span class="token punctuation">.</span>position<span class="token punctuation">,</span> <span class="token operator">-</span>Vector3<span class="token punctuation">.</span>up<span class="token punctuation">,</span> <span class="token keyword">out</span> hit<span class="token punctuation">,</span> <span class="token keyword">float</span><span class="token punctuation">.</span>PositiveInfinity<span class="token punctuation">,</span>layer<span class="token punctuation">)</span> <span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        target <span class="token operator">=</span> hit<span class="token punctuation">.</span>collider<span class="token punctuation">.</span>tag<span class="token punctuation">;</span>
+        offsetDistance <span class="token operator">=</span> hit<span class="token punctuation">.</span>distance<span class="token punctuation">;</span>
+        CamRig<span class="token punctuation">.</span>instance<span class="token punctuation">.</span>RaycastPosition <span class="token operator">=</span> hit<span class="token punctuation">.</span>point<span class="token punctuation">;</span>
+        Debug<span class="token punctuation">.</span><span class="token function">DrawLine</span><span class="token punctuation">(</span>transform<span class="token punctuation">.</span>position<span class="token punctuation">,</span> hit<span class="token punctuation">.</span>point<span class="token punctuation">,</span> Color<span class="token punctuation">.</span>cyan<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre><ul>
+<li>
+<h5>Coin</h5>
+</li>
+</ul>
+<p>The coin is designed to increase players&apos; gaming experience. It is a motivation that drives the player to go through as many paths as possible, collecting coins as they go through each path. The coin currently only servers one purpose, which is to unlock the final destination. The player has to collect certain mount of coins to unlock the last teleportation door which leads to the final island.</p>
+<p>The coin has a loop animation of rotation.</p>
+<hr>
+<h3 class="mume-header" id="evaluation">Evaluation</h3>
+
+<ul>
+<li>Script:</li>
+</ul>
+<ol>
+<li>
+<p>ask the player to adjust the HMD and put it on.</p>
+</li>
+<li>
+<p>ensure they are ready and start the game.</p>
+</li>
+<li>
+<p>ask the player do not more and stand still, ask them to follow the UI instruction for the height recording purpose.</p>
+</li>
+<li>
+<p>ask the player to turn around and walk to that door and start the exploring the game as they want. And let he know he only have one task which is to collect as many coins as they can.</p>
+</li>
+<li>
+<p>(optional, if he get stuck and want some help) ask the player to get closer to the flag, the red and the blue flag.</p>
+</li>
+<li>
+<p>(optional, if he get stuck and want some help) ask the to look to the lower platform and ask them to try to fall to that lower platform.</p>
+</li>
+<li>
+<p>(optional, if he get stuck and want some help) ask the player to get closer to elevator station.</p>
+</li>
+<li>
+<p>ask the player to take off his HMD after 3 minutes. (time limit)</p>
+</li>
+</ol>
+<ul>
+<li>Instruction Questions:</li>
+</ul>
+<ol>
+<li>&quot;Are you comfortable with the head set?&quot;</li>
+<li>&quot;Can you see the game scene clearly?&quot;</li>
+<li>&quot;Do you feel dizzy?&quot;</li>
+<li>&quot;If you can see a UI panel showed in front of you, please follow its instruction and stand still.&quot;</li>
+<li>&quot;Please feel free to start exploring the game, if you need any help or instruction, please ask for help.&quot;</li>
+<li>&quot;Your thinkings are valuable to the development of the game. Please speak out your thoughts loud at anytime.&quot;</li>
+</ol>
+<ul>
+<li>Interview Questions:</li>
+</ul>
+<ol>
+<li>&quot;What is the most interesting part of the game so far?&quot;</li>
+<li>&quot;Do you have any difficulty with figuring out the purpose of certain game objects or the ?&quot;</li>
+<li>&quot;What other suggestion you would love to share to make it a better game?&quot;</li>
+</ol>
+<ul>
+<li>Results of analysis of the data</li>
+</ul>
+<ol>
+<li>It seems Participant have high rate of having problems of understanding what to do and what they can do.</li>
+<li>It also seems that there need more game elements to be added to the game to make the game more challenging and more fun.</li>
+<li>Some players also want the game to be easy rather than difficult.</li>
+<li>The most urgent part is to add the a meaningful purpose to the coin system, what the player can do with coins? give more motivation to drive them collecting coins.</li>
+<li>The tutorial might be a good idea to solve the problem one. (important!)</li>
+<li>Add more art, add more grass or environment to the game make it more friendly and immersive.</li>
+</ol>
+<ul>
+<li>Improvement</li>
+</ul>
+<ol>
+<li>As requested by the user, the tutorial level is current under development and it is going to guide player through the whole game and each game object.</li>
+<li>The game is current under development on <em>Mirage Solo with Daydream</em> with Google VR and will launched on google play store later. So the game will no longer running on HTC vive only, gives more portability to the VR headset.</li>
+<li>The art of the game has been evolved a lot. The game has now has the Japanese Low poly style scene. And has a better story.</li>
+</ol>
+<hr>
+<h3 class="mume-header" id="limitation">Limitation</h3>
+
+<p>The main limitation of the game is the room size. If the player only has a small room size, the generation of the path in the level will be very tedious and there does not seem to be a way to solve this issue.</p>
+<hr>
+<h3 class="mume-header" id="future-work">Future work</h3>
+
+<ul>
+<li>
+<h6>Google VR</h6>
+</li>
+</ul>
+<p>It requires more time to make the game full functional with Google VR and later updates.</p>
+<ul>
+<li>
+<h6>Monsters and traps</h6>
+</li>
+</ul>
+<p>Add monsters and traps into the game. Make the game more difficult and interesting by adding some difficulty to the game.</p>
+<ul>
+<li>
+<h6>Controllers</h6>
+</li>
+</ul>
+<p>Let players to be able to play the game with the controllers as well. Add weapons to players that allow them to use and kill monsters</p>
+<ul>
+<li>
+<h6>Story</h6>
+</li>
+</ul>
+<p>Add more story and content to the background of the game, make the ninja theme more interesting.</p>
+<ul>
+<li>
+<h6>More Gameobject</h6>
+</li>
+</ul>
+<p>Add more objects like slides, to let player have more option to travel through paths.</p>
+<ul>
+<li>
+<h6>Redirected Walk Algorithm</h6>
+</li>
+</ul>
+<p>Work more on the algorithm to make the game more interesting and more dynamic.</p>
+<hr>
+<h3 class="mume-header" id="reference-work">Reference work</h3>
+
+<ul>
+<li>
+<h6>Citation</h6>
+</li>
+</ul>
+<p>&#x201C;Walking in Virtual Reality Redirected Walking Unlimited Corridor Trailer,&#x201D; IamVR, Aug. 2016. <a href="http://www.iamvr.co/walking-virtual-reality-redirected-walking/">http://www.iamvr.co/walking-virtual-reality-redirected-walking/</a></p>
+<ul>
+<li>
+<h6>Related Asset for this project:</h6>
+</li>
+</ul>
+<p><a href="https://assetstore.unity.com/packages/tools/utilities/pooly-professional-pooling-system-82941">Pooly - Professional Pooling System</a><br>
+<a href="https://assetstore.unity.com/packages/3d/characters/humanoids/polygon-mini-fantasy-character-pack-122084">POLYGON MINI - Fantasy Character Pack</a><br>
+<a href="https://assetstore.unity.com/packages/3d/environments/polygon-samurai-pack-89551">POLYGON - Samurai Pack</a><br>
+<a href="https://assetstore.unity.com/packages/3d/environments/fantasy/cube-world-town-121923">Cube World Town</a><br>
+<a href="https://assetstore.unity.com/packages/3d/environments/low-poly-rocks-pack-70164">Low Poly Rocks Pack</a><br>
+<a href="https://assetstore.unity.com/packages/tools/gui/health-and-progress-bars-pro-82405">Health and Progress Bars Pro</a><br>
+<a href="https://assetstore.unity.com/packages/3d/props/exterior/floating-grass-platforms-72701">Floating grass platforms</a><br>
+<a href="https://assetstore.unity.com/packages/3d/simple-sky-cartoon-assets-42373">Simple Sky - Cartoon assets</a></p>
+</body></html>
+      </div>
+      
+      
+    </body>
+    
+    
+    
+    
+    
+    
+    
+  </html>
